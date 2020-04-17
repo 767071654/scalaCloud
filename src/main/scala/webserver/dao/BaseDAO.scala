@@ -1,4 +1,4 @@
-package boot.dao
+package webserver.dao
 
 import io.getquill.context.monix.Runner
 import io.getquill._

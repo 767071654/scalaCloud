@@ -1,7 +1,10 @@
-package boot.bean
+package webserver.repository
+
+import com.fasterxml.jackson.annotation.JsonIgnore
 
 import scala.beans.BeanProperty
 
+@JsonIgnore
 case class PageBanner(
   @BeanProperty
   id:  Long = 0L,
@@ -10,7 +13,7 @@ case class PageBanner(
   @BeanProperty
   images:  String,  //图片
   @BeanProperty
-  targetUri:  Option[String] = None,  //链接地址
+  targetUri:  String,  //链接地址
   @BeanProperty
   createAt:  Int = 0,  //null
   @BeanProperty

@@ -1,2 +1,2 @@
 # scalaCloud
-scala+akka+springboot+springcloud
+scala+akka+springBoot+springCloud

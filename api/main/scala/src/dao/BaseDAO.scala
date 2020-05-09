@@ -1,4 +1,4 @@
-package webserver.dao
+package src.dao
 
 import io.getquill.context.monix.Runner
 import io.getquill._

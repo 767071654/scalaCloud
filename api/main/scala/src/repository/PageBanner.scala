@@ -1,4 +1,4 @@
-package webserver.repository
+package src.repository
 
 import com.fasterxml.jackson.annotation.JsonIgnore
 
@@ -13,7 +13,7 @@ case class PageBanner(
   @BeanProperty
   images:  String,  //图片
   @BeanProperty
-  targetUri:  String,  //链接地址
+  targetUri:  Option[String] = None,  //链接地址
   @BeanProperty
   createAt:  Int = 0,  //null
   @BeanProperty

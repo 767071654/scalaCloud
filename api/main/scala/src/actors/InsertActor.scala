@@ -1,9 +1,9 @@
-package webserver.actors
+package src.actors
 
 import akka.actor.{Actor, Props}
 import org.springframework.beans.factory.annotation.Autowired
-import webserver.dao.BannerDAO
-import webserver.repository.PageBanner
+import src.dao.BannerDAO
+import src.repository.PageBanner
 
 import scala.concurrent.Await
 

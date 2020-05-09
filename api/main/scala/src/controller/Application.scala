@@ -1,9 +1,9 @@
-package webserver.controller
+package src.controller
 
 import org.springframework.web.bind.annotation.{GetMapping, RequestMapping, RestController}
 
 @RestController
-class ApplicationController {
+class Application {
 
   @GetMapping(Array("/"))
   def index = {

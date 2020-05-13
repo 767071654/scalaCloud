@@ -1,4 +1,4 @@
-package src.config
+package server.config
 
 import com.fasterxml.jackson.databind.{DeserializationFeature, ObjectMapper, SerializationFeature}
 import com.fasterxml.jackson.module.scala.{DefaultScalaModule, ScalaObjectMapper}

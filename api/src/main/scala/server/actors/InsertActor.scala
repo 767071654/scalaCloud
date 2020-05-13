@@ -1,11 +1,9 @@
-package src.actors
+package server.actors
 
-import akka.actor.{Actor, Props}
+import akka.actor.Actor
 import org.springframework.beans.factory.annotation.Autowired
-import src.dao.BannerDAO
-import src.repository.PageBanner
-
-import scala.concurrent.Await
+import server.dao.BannerDAO
+import server.repository.PageBanner
 
 class InsertActor (@Autowired bannerDAO: BannerDAO) extends Actor {
 

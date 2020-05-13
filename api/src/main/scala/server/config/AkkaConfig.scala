@@ -1,4 +1,4 @@
-package src.config
+package server.config
 
 import akka.actor.ActorSystem
 import org.springframework.context.annotation.{Bean, Configuration, Scope}

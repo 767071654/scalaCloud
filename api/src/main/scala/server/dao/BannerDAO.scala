@@ -1,8 +1,8 @@
-package src.dao
+package server.dao
 
 import monix.execution.CancelableFuture
 import org.springframework.stereotype.Repository
-import src.repository.PageBanner
+import server.repository.PageBanner
 
 @Repository
 class BannerDAO extends BaseDAO {

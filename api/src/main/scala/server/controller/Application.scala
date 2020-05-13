@@ -1,4 +1,4 @@
-package src.controller
+package server.controller
 
 import org.springframework.web.bind.annotation.{GetMapping, RequestMapping, RestController}
 

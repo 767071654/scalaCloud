@@ -1,4 +1,4 @@
-package src.dao
+package server.dao
 
 import io.getquill.context.monix.Runner
 import io.getquill._

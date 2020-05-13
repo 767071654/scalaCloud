@@ -1,13 +1,13 @@
-package src.controller
+package server.controller
 
 import akka.actor.{ActorSystem, Props}
 import com.typesafe.scalalogging.LazyLogging
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation._
 import reactor.core.scala.publisher.SMono
-import src.actors.InsertActor
-import src.dao.BannerDAO
-import src.repository.PageBanner
+import server.actors.InsertActor
+import server.dao.BannerDAO
+import server.repository.PageBanner
 
 import scala.beans.BeanProperty
 import scala.concurrent.ExecutionContext.Implicits.global

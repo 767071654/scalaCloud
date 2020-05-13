@@ -1,6 +1,9 @@
+
 name := "scalaCloud"
 
 version := "0.1"
+
+scalaVersion := "2.13.1"
 
 def common = Seq(
   publishArtifact in(Compile, packageDoc) := false,
@@ -9,16 +12,20 @@ def common = Seq(
 )
 
 lazy val parent = (project in file("parent")).
+  enablePlugins(JavaAppPackaging).
   settings(common: _*)
 
 lazy val api = (project in file("api")).
   dependsOn(parent).
+  enablePlugins(JavaAppPackaging).
   settings(common: _*)
 
 lazy val eureka = (project in file("eureka")).
   dependsOn(parent).
-  settings(common: _*)                     
+  enablePlugins(JavaAppPackaging).
+  settings(common: _*)
 
 lazy val root = (project in file(".")).
-  aggregate(parent, api, eureka)
+  aggregate(parent, api, eureka).
+  enablePlugins(JavaAppPackaging)
 

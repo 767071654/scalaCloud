@@ -1,4 +1,4 @@
-package src.repository
+package server.repository
 
 import com.fasterxml.jackson.annotation.JsonIgnore
 

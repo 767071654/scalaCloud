@@ -1,0 +1,14 @@
+name := "api"
+
+version := "0.1"
+
+scalaVersion := "2.13.1"
+
+ThisBuild / useCoursier := false
+
+libraryDependencies ++= {
+  val verEureka = "2.2.2.RELEASE"
+  Seq(
+    "org.springframework.cloud"           % "spring-cloud-starter-netflix-eureka-client"  % verEureka,
+  )
+}

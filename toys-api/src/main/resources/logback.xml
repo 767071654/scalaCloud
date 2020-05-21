@@ -33,6 +33,7 @@
     </appender>
 
     <logger name="io.getquill" level="DEBUG"/>
+    <logger name="server.remote.FeignTrait" level="DEBUG"/>
 
     <root level="INFO">
         <appender-ref ref="ASYNC-STDOUT"/>

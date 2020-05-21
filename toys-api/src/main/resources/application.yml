@@ -9,6 +9,28 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8201/eureka/
+    fetch-registry: true
+
+ribbon:
+  OkToRetryOnAllOperations: false #对所有操作请求都进行重试,默认false
+  ReadTimeout: 5000   #负载均衡超时时间，默认值5000
+  ConnectTimeout: 3000 #ribbon请求连接的超时时间，默认值2000
+  MaxAutoRetries: 0     #对当前实例的重试次数，默认0
+  MaxAutoRetriesNextServer: 1 #对切换实例的重试次数，默认1
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 20000
+
+feign:
+  hystrix:
+    enabled: true
+
+
 
 #mysql
 #dataSource:

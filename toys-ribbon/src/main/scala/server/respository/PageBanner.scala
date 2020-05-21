@@ -1,6 +1,4 @@
-package server.repository
-
-import com.fasterxml.jackson.annotation.JsonIgnore
+package server.respository
 
 import scala.beans.BeanProperty
 
@@ -16,5 +14,5 @@ case class PageBanner(
   @BeanProperty
   createAt:  Int = 0,  //null
   @BeanProperty
-  updateAt:  Int = 0 //null
+  updateAt:  Int = 0,  //null
 )

@@ -5,7 +5,12 @@ import org.springframework.beans.factory.annotation.Autowired
 import server.dao.BannerDAO
 import server.repository.PageBanner
 
-class InsertActor (@Autowired bannerDAO: BannerDAO) extends Actor {
+import scala.concurrent.ExecutionContext
+
+class InsertActor @Autowired()(
+  bannerDAO: BannerDAO)(
+  implicit
+  executionContext: ExecutionContext) extends Actor {
 
   override def receive: Receive = {
     case banner: PageBanner => {

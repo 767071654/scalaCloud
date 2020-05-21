@@ -1,2 +1,2 @@
 # scalaCloud
-scala+springBoot+springCloud+webflux+actor+quill纯异步架构
+scala+springBoot+springCloud+webflux+actor+quill纯异步微服务架构

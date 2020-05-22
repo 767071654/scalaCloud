@@ -3,13 +3,15 @@ spring:
     name: api
 
 server:
-  port: 8202
+  port: 8201
 
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8201/eureka/
+      defaultZone: http://localhost:8200/eureka/
     fetch-registry: true
+    instance:
+      prefer-ip-address: true
 
 ribbon:
   OkToRetryOnAllOperations: false #对所有操作请求都进行重试,默认false

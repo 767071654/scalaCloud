@@ -4,7 +4,7 @@ version := "0.1"
 
 scalaVersion := "2.13.1"
 
-ThisBuild / useCoursier := false
+//ThisBuild / useCoursier := false
 
 libraryDependencies ++= {
   val verEureka = "2.2.2.RELEASE"

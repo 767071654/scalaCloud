@@ -3,11 +3,13 @@ spring:
     name: ribbon
 
 server:
-  port: 8205
+  port: 8202
 
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8201/eureka/
+      defaultZone: http://localhost:8200/eureka/
     fetch-registy: true
+    instance:
+      prefer-ip-address: true
 

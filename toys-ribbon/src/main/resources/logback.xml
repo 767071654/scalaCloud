@@ -12,9 +12,9 @@
     </appender>
 
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>${application.home:-.}/toys-ribbon/logs/ribbon.log</file>
+        <file>${application.home:-.}/logs/ribbon.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>${application.home:-.}/toys-ribbon/logs/ribbon.%d{yyyy-MM-dd}.%i.zip</fileNamePattern>
+            <fileNamePattern>${application.home:-.}/logs/ribbon.%d{yyyy-MM-dd}.%i.zip</fileNamePattern>
             <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
                 <maxFileSize>50MB</maxFileSize>
             </timeBasedFileNamingAndTriggeringPolicy>
